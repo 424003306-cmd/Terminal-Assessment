@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Student Profile - Contact</title>
 
     <link rel="stylesheet" href="style.css">
@@ -10,35 +11,50 @@
 
 <body>
 
-    <header>
-        <nav class="navbar">
-            <a href="index.html">Bio Page</a>
-            <a href="contact.html">Contact Page</a>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar">
 
-    <main class="container">
+        <h2 class="logo">Student Profile</h2>
 
-        <section class="card">
-            <h1>Contact Me</h1>
+        <div class="nav-links">
+            <a href="index.html">Bio</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
-            <form class="form">
+    </nav>
+</header>
 
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required>
+<main class="container">
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
+    <section class="card">
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+        <h1>Contact Me</h1>
 
-                <button type="submit">Send Message</button>
+        <form>
 
-            </form>
-        </section>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" required>
 
-    </main>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message"
+                      rows="5"
+                      minlength="20"
+                      required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Teddy Michael S. Baltar</p>
+</footer>
 
 </body>
 </html>
